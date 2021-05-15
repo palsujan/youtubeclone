@@ -1,0 +1,57 @@
+.main{
+    .row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 30px;
+        .leftBox{
+            max-width:200px;
+            .logo{
+                width: 80px;
+                display: inline-block;
+                margin-left: 10px;
+                position: relative;
+                top:5px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .centerBox{
+            width:600px;
+            .inputWrap{
+                width: 100%;
+                position: relative;
+                input{
+                    width: 100%;
+                    border:solid 1px rgba(0,0,0,0.3);
+                    border-radius:4px;
+                    box-sizing: border-box;
+                    padding:7px 30px 7px 10px;
+                    
+                }
+                .search{
+                    position: absolute;
+                    right:3px;
+                    top:4px;
+                    opacity: 0.3;
+                }
+            }
+        }
+
+        .rightBox{
+            max-width:260px;
+            span{
+                display:inline-block;
+                margin-left: 5px;
+                &:nth-last-child(1){
+                    position: relative;
+                    top:6px;
+                }
+            }
+        }
+
+    }
+}

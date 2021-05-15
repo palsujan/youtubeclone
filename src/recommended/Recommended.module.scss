@@ -1,0 +1,34 @@
+.main{
+    background-color: #f9f9f90;
+    padding: 40px 20px;
+    .videos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        .videoWrap{
+            flex-basis: 100%;
+            padding: 5px;
+            margin-bottom: 30px;
+            justify-content: space-between;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+@media(min-width:768px){
+    .main{
+        .videos{
+            flex-direction: row;
+            .videoWrap{
+                flex-basis: 32%;
+            }
+        }
+    }
+}
+@media(min-width:992px){
+    
+}
+@media(min-width:1200px){
+    
+}

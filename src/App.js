@@ -1,14 +1,24 @@
-import './App.css';
+import classNames from 'classnames';
+import Styles from './App.module.scss';
 import Header from './header/Header';
+import Recommended from './recommended/Recommended';
+import Sidebar from './sidebar/Sidebar';
+
 
 function App() {
   return (
     //BEM class naming conversion
-    <div className="App">
-      <h1>Hello Programmer</h1>
+    <div className={Styles.main}>
       {/* Header */}
       <Header/>
-      {/* Sidebar */}
+        <div className={Styles.pageLayout}>
+            <div className={Styles.left}>
+                <Sidebar/>
+            </div>
+            <div className={Styles.right}>
+                <Recommended/>
+            </div>
+        </div>
       {/* RecommendVideos */}
     </div>
   );
